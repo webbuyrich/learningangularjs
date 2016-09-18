@@ -51,6 +51,7 @@
                 				<input type="text" ng-model="last" placeholder="Last Name" class="form-control">
                 			</div>
                 			<button type="submit" class="btn btn-success" ng-click="updateMessage()">Sign in</button>
+                			<button type="submit" class="btn btn-danger" ng-click="clearEverything()">Clear Data</button>
                 		</form>
                 	</div> 
                 </div>
