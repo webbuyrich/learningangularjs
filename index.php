@@ -30,6 +30,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Javascript</a></li>
                         <li ><a href="ch02.php">CH02</a></li>
+                        <li class=""><a href="ch03.php">CH03</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
