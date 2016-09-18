@@ -28,7 +28,7 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.php">Loops</a></li>
+                    <li class="active"><a href="index.php">Javscript</a></li>
                     
                   </ul>
                 </div><!--/.nav-collapse -->
@@ -114,11 +114,164 @@
                                         }
                                     }
                                  ?>
-                                 
+
                              </div>
                           </div>
                         </div>
                       </div><!-- DO WHILE LOOPS -->
+
+                      <!-- FOR IN LOOPS -->
+                      <div class="panel panel-default">
+                         <div class="panel-heading" role="tab" id="foreachloopheading">
+                           <h4 class="panel-title">
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#foreach" aria-expanded="true" aria-controls="whileloop">
+                               Foreach Loops
+                             </a>
+                           </h4>
+                         </div>
+                         <div id="foreach" class="panel-collapse collapse" role="tabpanel" aria-labelledby="foreachloopheading">
+                           <div class="panel-body">
+                              <div>
+                                  <pre>
+                                     &lt;?php 
+                                        $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
+                                        foreach ($days as $day){
+                                           echo "It is ". $day. "&lt;br&gt;";
+                                        }
+                                     ?&gt;   
+                                  </pre>
+                              </div>
+                              <br>
+                              <div>
+                                  Result:<br/>
+                                  <?php 
+                                    
+                                     $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
+                                     foreach ($days as $day){
+                                        echo "It is ". $day. "<br>";
+                                     }
+                                  ?>
+                                  
+                              </div>
+                           </div>
+                         </div>
+                       </div><!-- FOR IN LOOPS -->
+                </div><!-- ACCORDION LIST -->
+            </div>
+
+            <div class=" container row">
+                <h2>Functions</h2><hr>
+                <!-- ACCORDION LIST -->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <!-- SIMPLE FUNCTION -->
+                    <div class="panel panel-default">
+                       <div class="panel-heading" role="tab" id="simplefunctionheading">
+                         <h4 class="panel-title">
+                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#simplefunction" aria-expanded="true" aria-controls="whileloop">
+                             Simple Function
+                           </a>
+                         </h4>
+                       </div>
+                       <div id="simplefunction" class="panel-collapse collapse" role="tabpanel" aria-labelledby="simplefunctionheading">
+                         <div class="panel-body">
+                            <div>
+                                <pre>
+                                    &lt;?php<br>
+                                        function greeting(){
+                                            echo "Hello World!";
+                                        }
+                                        myFunction();
+                                    ?&gt;
+                                </pre>
+                            </div>
+                            <br>
+                            <div>
+                                Result:<br/>
+                                <?php 
+                                    function myFunction(){
+                                        echo "Hello World!";
+                                    }
+                                    myFunction();
+                                ?>
+                            </div>
+                         </div>
+                       </div>
+                     </div><!-- WHILE LOOPS -->
+
+                     <!-- DO WHILE LOOPS -->
+                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="forloopheading">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#forloop" aria-expanded="true" aria-controls="whileloop">
+                              For Loops
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="forloop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="forloopheading">
+                          <div class="panel-body">
+                             <div>
+                                 <pre>
+                                    &lt;?php 
+                                       for($x = 1; $x <= 3; $x++){
+                                           for($y = 1; $y <= 3; $y++){
+                                               echo ($x . " X ". $y ." = ".($x*$y)."&lt;br &gt;");
+                                           }
+                                       }
+                                    ?&gt;   
+                                 </pre>
+                             </div>
+                             <br>
+                             <div>
+                                 Result:<br/>
+                                 <?php 
+                                    for($x = 1; $x <= 3; $x++){
+                                        for($y = 1; $y <= 3; $y++){
+                                            echo ($x . " X ". $y ." = ".($x*$y)."<br>");
+                                        }
+                                    }
+                                 ?>
+
+                             </div>
+                          </div>
+                        </div>
+                      </div><!-- DO WHILE LOOPS -->
+
+                      <!-- FOR IN LOOPS -->
+                      <div class="panel panel-default">
+                         <div class="panel-heading" role="tab" id="foreachloopheading">
+                           <h4 class="panel-title">
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#foreach" aria-expanded="true" aria-controls="whileloop">
+                               Foreach Loops
+                             </a>
+                           </h4>
+                         </div>
+                         <div id="foreach" class="panel-collapse collapse" role="tabpanel" aria-labelledby="foreachloopheading">
+                           <div class="panel-body">
+                              <div>
+                                  <pre>
+                                     &lt;?php 
+                                        $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
+                                        foreach ($days as $day){
+                                           echo "It is ". $day. "&lt;br&gt;";
+                                        }
+                                     ?&gt;   
+                                  </pre>
+                              </div>
+                              <br>
+                              <div>
+                                  Result:<br/>
+                                  <?php 
+                                    
+                                     $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
+                                     foreach ($days as $day){
+                                        echo "It is ". $day. "<br>";
+                                     }
+                                  ?>
+                                  
+                              </div>
+                           </div>
+                         </div>
+                       </div><!-- FOR IN LOOPS -->
                 </div><!-- ACCORDION LIST -->
             </div>
             
