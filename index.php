@@ -14,28 +14,8 @@
     </head>
     <body>
 
-        <!-- NAVIGATION BAR -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.php">Learning AngularJS</a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.php">Javascript</a></li>
-                        <li ><a href="ch02.php">CH02</a></li>
-                        <li class=""><a href="ch03.php">CH03</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
-        <!-- NAVIGATION BAR -->
+        
+        <?php include('navmenu.php'); ?>
 
         <div class="container">
             <div class="starter-template">
