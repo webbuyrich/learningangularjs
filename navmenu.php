@@ -18,9 +18,10 @@ echo '
                 <li ><a href="index.php">Javascript</a></li>
                 <li class=""><a href="ch02.php">CH02</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" 
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" 
                     href="ch03.php">CH03<span class="caret"></span></a>
-                    <ul class="dropdown-menu">                                
+                    <ul class="dropdown-menu"> 
+                        <li><a href="ch03.php">CH03 - Injecting a Built-in Provider</a></li>                          
                         <li><a href="ch03.3.php">CH03.3 - Custom Provider and Injection</a></li>
                         <li><a href="ch03.5.php">CH03.5 - Config and Run Blocks</a></li>
                     </ul>

@@ -34,6 +34,6 @@
         <script src="js/less.js"></script>
         <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
         <script src="js/inject_builtin.js"></script>
-        
+        <script src="js/script.js"></script>
     </body>
 </html>
