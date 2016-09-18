@@ -28,7 +28,7 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.php">Javscript</a></li>
+                    <li class="active"><a href="index.php">Javascript</a></li>
                     
                   </ul>
                 </div><!--/.nav-collapse -->
@@ -95,12 +95,12 @@
                           <div class="panel-body">
                              <div>
                                  <pre>
-                                    &lt;?php 
+                                    &lt;?php <br>
                                        for($x = 1; $x <= 3; $x++){
                                            for($y = 1; $y <= 3; $y++){
                                                echo ($x . " X ". $y ." = ".($x*$y)."&lt;br &gt;");
                                            }
-                                       }
+                                       }<br>
                                     ?&gt;   
                                  </pre>
                              </div>
@@ -133,11 +133,11 @@
                            <div class="panel-body">
                               <div>
                                   <pre>
-                                     &lt;?php 
+                                     &lt;?php<br>
                                         $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
                                         foreach ($days as $day){
                                            echo "It is ". $day. "&lt;br&gt;";
-                                        }
+                                        }<br>
                                      ?&gt;   
                                   </pre>
                               </div>
@@ -163,6 +163,7 @@
                 <h2>Functions</h2><hr>
                 <!-- ACCORDION LIST -->
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    
                     <!-- SIMPLE FUNCTION -->
                     <div class="panel panel-default">
                        <div class="panel-heading" role="tab" id="simplefunctionheading">
@@ -180,7 +181,7 @@
                                         function greeting(){
                                             echo "Hello World!";
                                         }
-                                        myFunction();
+                                        myFunction();<br>
                                     ?&gt;
                                 </pre>
                             </div>
@@ -196,82 +197,91 @@
                             </div>
                          </div>
                        </div>
-                     </div><!-- WHILE LOOPS -->
+                     </div><!-- SIMPLE FUNCTION -->  
 
-                     <!-- DO WHILE LOOPS -->
+                     <!-- PASSING VARIABLES FUNCTION -->
                      <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="forloopheading">
+                        <div class="panel-heading" role="tab" id="variablefunctionh">
                           <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#forloop" aria-expanded="true" aria-controls="whileloop">
-                              For Loops
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#variablefunction" aria-expanded="true" aria-controls="whileloop">
+                              Passing Variables Function
                             </a>
                           </h4>
                         </div>
-                        <div id="forloop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="forloopheading">
+                        <div id="variablefunction" class="panel-collapse collapse" role="tabpanel" aria-labelledby="variablefunctionh">
                           <div class="panel-body">
                              <div>
                                  <pre>
-                                    &lt;?php 
-                                       for($x = 1; $x <= 3; $x++){
-                                           for($y = 1; $y <= 3; $y++){
-                                               echo ($x . " X ". $y ." = ".($x*$y)."&lt;br &gt;");
-                                           }
-                                       }
-                                    ?&gt;   
+                                     &lt;?php<br>
+                                          function greeting($name, $city){
+                                             echo "Hello " . $name . ".&lt;br&gt;";
+                                             echo "How is the weather in " . $city ."?";
+                                          }<br>
+                                         $name = "Richard";
+                                         greeting($name, "Houston");  <br>
+                                     ?&gt;
                                  </pre>
                              </div>
                              <br>
                              <div>
                                  Result:<br/>
                                  <?php 
-                                    for($x = 1; $x <= 3; $x++){
-                                        for($y = 1; $y <= 3; $y++){
-                                            echo ($x . " X ". $y ." = ".($x*$y)."<br>");
-                                        }
-                                    }
-                                 ?>
+                                     function greeting($name, $city){
+                                        echo "Hello " . $name . ".<br>";
+                                        echo "How is the weather in " . $city ."?";
 
+                                     }
+                                    $name = "Richard";
+                                    greeting($name, "Houston");    
+                                 ?>
                              </div>
                           </div>
                         </div>
-                      </div><!-- DO WHILE LOOPS -->
+                      </div><!-- PASSING VARIABLES FUNCTION -->  
 
-                      <!-- FOR IN LOOPS -->
+                      <!-- RETURNING VALUES FUNCTION -->
                       <div class="panel panel-default">
-                         <div class="panel-heading" role="tab" id="foreachloopheading">
+                         <div class="panel-heading" role="tab" id="returnvalueh">
                            <h4 class="panel-title">
-                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#foreach" aria-expanded="true" aria-controls="whileloop">
-                               Foreach Loops
+                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#returnvalue" aria-expanded="true" aria-controls="whileloop">
+                               Returning Valuables Function
                              </a>
                            </h4>
                          </div>
-                         <div id="foreach" class="panel-collapse collapse" role="tabpanel" aria-labelledby="foreachloopheading">
+                         <div id="returnvalue" class="panel-collapse collapse" role="tabpanel" aria-labelledby="returnvalueh">
                            <div class="panel-body">
                               <div>
                                   <pre>
-                                     &lt;?php 
-                                        $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
-                                        foreach ($days as $day){
-                                           echo "It is ". $day. "&lt;br&gt;";
-                                        }
-                                     ?&gt;   
+                                      &lt;?php<br>
+                                            function formatGreeting($name, $city){
+                                              $retStr = '';
+                                              $retStr .= "Hello " . $name . ".";
+                                              $retStr .= "How is the weather in " . $city ."?";
+                                              return $retStr;
+                                            }
+                                           $greeting = formatGreeting("Richard", "Houston");
+                                           echo $greeting;<br>
+                                      ?&gt;
                                   </pre>
                               </div>
                               <br>
                               <div>
                                   Result:<br/>
                                   <?php 
-                                    
-                                     $days = array("Monday","Tuesday", "Wednesday", "Thursday", "Friday");
-                                     foreach ($days as $day){
-                                        echo "It is ". $day. "<br>";
-                                     }
+                                      function formatGreeting($name, $city){
+                                        $retStr = '';
+                                        $retStr .= "Hello " . $name . ".<br>";
+                                        $retStr .= "How is the weather in " . $city ."?";
+                                        return $retStr;
+                                      }
+                                     $greeting = formatGreeting("Richard", "Houston");
+                                     echo $greeting;    
                                   ?>
-                                  
                               </div>
                            </div>
                          </div>
-                       </div><!-- FOR IN LOOPS -->
+                       </div><!-- RETURNING VALUES FUNCTION -->  
+
                 </div><!-- ACCORDION LIST -->
             </div>
             
