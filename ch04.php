@@ -24,12 +24,13 @@
             <hr>
             <div class="container row text-center" ng-controller="Counter">                
                 <div class="row">
-                    <span>Change Amount:</span>
-                    <input type="number" ng-model="change">
-                    <button ng-click='inc()' class="btn btn-primary"> + </button>
-                    <button ng-click='dec()' class="btn btn-danger"> - </button>
-                    <hr>
-
+                    <div class="col-md-4 col-md-offset-4">
+                        <span>Change Amount:</span>
+                        <input type="number" ng-model="change" >
+                        <button ng-click='inc()' class="btn btn-primary"> + </button>
+                        <button ng-click='dec()' class="btn btn-danger"> - </button>
+                    </div>
+                   
                 </div>
                 <div class="row">
                     <span>Starting Value:</span>
