@@ -26,6 +26,7 @@ echo '
                         <li><a href="ch03.5.php">CH03.5 - Config and Run Blocks</a></li>
                     </ul>
                 </li>
+                <li ><a href="ch04.php">CH04</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
